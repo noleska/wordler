@@ -2,7 +2,7 @@
 """
 Created on Wed Feb 14 17:52:21 2024
 
-@author: 
+@author: Nick Oleska
 """
 
 import string
@@ -123,5 +123,5 @@ if __name__ == "__main__":
     dict_letter_values = letter_values(words)
     dict_word_scores = word_scores(words, dict_letter_values)
     results = sorted_scored_words(dict_word_scores)
-    print(results[0:10])
-        
+    for i in range(0,10):
+        print(results[i])
