@@ -46,7 +46,7 @@ letter_weights = {'a': 1.0,
 banned_characters = [".", ",", "-", "'", " ", r'/', '3']
 
 
-def valid_words_of_length():
+def valid_words():
     '''
     Processes and checks words in word-per-line text document
     for compliance with Wordle and configuration variables.
@@ -194,7 +194,7 @@ def sorted_scored_words(dict_x):
 
 
 if __name__ == "__main__":
-    words = valid_words_of_length()
+    words = valid_words()
     #dict_letter_values = letter_values(words)
     dict_word_scores = word_scores(words)
     results = sorted_scored_words(dict_word_scores)
