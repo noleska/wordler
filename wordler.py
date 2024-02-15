@@ -8,14 +8,11 @@ Created on Wed Feb 14 17:52:21 2024
 import string
 
 WORD_LENGTH = 5                               # wordle words are 5 characters long
-# location of list of possible answer words
-WORD_FILE_LOCATION = "./answers.txt"
+WORD_FILE_LOCATION = "./answers.txt"          # location of list of possible answer words
 EXCLUDE_ENDS_WITH_S = True                    # wordle answers are never plural
 VOWELS_ARE_WORTHLESS = True                   # assign zero score to vowels?
-# exclude from results list words with multiple of the same letter?
-EXCLUDE_WORDS_WITH_DUPLICATE_LETTERS = True
-# in scoring words, score weight for letters found in-place
-FOUND_IN_PLACE_WEIGHT = 1.0
+EXCLUDE_WORDS_WITH_DUPLICATE_LETTERS = True   # exclude from results list words with multiple of the same letter?
+FOUND_IN_PLACE_WEIGHT = 1.0                   # in scoring words, score weight for letters found in-place
 
 vowels = ['a', 'e', 'i', 'o', 'u', 'y']
 
@@ -168,9 +165,7 @@ def word_scores(list_words):
                     if char == _char:
                         if (VOWELS_ARE_WORTHLESS and (char in vowels)) == False:
                             if character_index_1 == character_index_2:
-                                word_score += 1 * \
-                                    letter_weights[char] * \
-                                    FOUND_IN_PLACE_WEIGHT
+                                word_score += 1 * letter_weights[char] * FOUND_IN_PLACE_WEIGHT
                             else:
                                 word_score += 1 * letter_weights[char]
         out[word] = word_score
