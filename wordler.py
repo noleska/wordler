@@ -7,7 +7,7 @@ Created on Wed Feb 14 17:52:21 2024
 
 import string
 
-word_length = 5;                              # wordle words are 5 characters long
+word_length = 5                               # wordle words are 5 characters long
 word_file_location = "./answers.txt"          # location of list of possible answer words
 exclude_ends_with_s = True                    # wordle answers are never plural
 vowels_are_worthless = True                   # assign zero score to vowels?
