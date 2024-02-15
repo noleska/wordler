@@ -60,7 +60,7 @@ def valid_words_of_length():
     out = []
     with open(WORD_FILE_LOCATION) as word_file:
         for _word in word_file:
-            _word = _word.strip()
+            _word = _word.strip().lower()
             valid = True
             if EXCLUDE_ENDS_WITH_S and _word.endswith('s'):
                 valid = False
@@ -71,7 +71,7 @@ def valid_words_of_length():
                     valid = False
                     break
             if valid:
-                out.append(_word.lower())
+                out.append(_word)
     return out
 
 
