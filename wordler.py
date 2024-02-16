@@ -2,7 +2,9 @@
 """
 Created on Wed Feb 14 17:52:21 2024
 
-@author: Nick Oleska
+@author: Nick Oleska and the hon. Rev. Jason Manz
+TODO: get rank of a word
+      incorporate allowed guess words. currently works off of answers only 
 """
 
 import string
