@@ -14,9 +14,9 @@ WORD_FILE_LOCATION = "./answers.txt"          # location of list of possible ans
 EXCLUDE_ENDS_WITH_S = True                    # wordle answers are never plural
 VOWELS_ARE_WORTHLESS = True                   # assign zero score to vowels?
 EXCLUDE_WORDS_WITH_DUPLICATE_LETTERS = True   # exclude from results list words with multiple of the same letter?
-FOUND_IN_PLACE_WEIGHT = 1.0                   # in scoring words, score weight for letters found in-place
+FOUND_IN_PLACE_WEIGHT = 10.0                   # in scoring words, score weight for letters found in-place
 
-vowels = ['a', 'e', 'i', 'o', 'u', 'y']
+vowels = ['a', 'e', 'i', 'o', 'u', 'y','s','l','a','n','t']
 
 letter_weights = {'a': 1.0,
                   'b': 1.0,
