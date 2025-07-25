@@ -16,7 +16,7 @@ VOWELS_ARE_WORTHLESS = True                   # assign zero score to vowels?
 EXCLUDE_WORDS_WITH_DUPLICATE_LETTERS = True   # exclude from results list words with multiple of the same letter?
 FOUND_IN_PLACE_WEIGHT = 10.0                   # in scoring words, score weight for letters found in-place
 
-vowels = ['a', 'e', 'i', 'o', 'u', 'y','s','l','a','n','t']
+vowels = ['a', 'e', 'i', 'o', 'u', 'y']
 
 letter_weights = {'a': 1.0,
                   'b': 1.0,
